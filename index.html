@@ -10,7 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -25,7 +24,7 @@ body{
 
 header{
     min-height:100vh;
-    background:linear-gradient(135deg,#003A99,#1E5BC6);
+    background:linear-gradient(135deg,#022B5B,#0A4EA3,#2EA8E6);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -55,11 +54,11 @@ header{
 
 .btn{
     display:inline-block;
-    padding:15px 30px;
+    padding:15px 35px;
     background:white;
-    color:#003A99;
+    color:#022B5B;
     text-decoration:none;
-    border-radius:10px;
+    border-radius:50px;
     font-weight:600;
     transition:.3s;
 }
@@ -86,7 +85,7 @@ section{
 
 .title{
     text-align:center;
-    color:#003A99;
+    color:#022B5B;
     margin-bottom:50px;
     font-size:2.5rem;
 }
@@ -102,10 +101,16 @@ section{
     padding:30px;
     border-radius:20px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
 }
 
 .card h3{
-    color:#003A99;
+    color:#022B5B;
     margin-bottom:15px;
 }
 
@@ -136,25 +141,32 @@ section{
 }
 
 footer{
-    background:#003A99;
+    background:#022B5B;
     color:white;
     text-align:center;
     padding:40px;
 }
 
-.qr-status{
+.whatsapp{
     position:fixed;
-    right:20px;
-    bottom:20px;
-    background:white;
-    padding:15px 20px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    font-size:.9rem;
+    bottom:25px;
+    right:25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:14px 20px;
+    border-radius:50px;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    z-index:999;
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:translateY(-5px);
 }
 
 @media(max-width:900px){
-
 .hero{
     grid-template-columns:1fr;
     text-align:center;
@@ -163,53 +175,40 @@ footer{
 .hero-text h1{
     font-size:3rem;
 }
-
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-
 <div class="hero">
 
 <div class="hero-text">
-
 <h1>AGUA LA CUMBRE</h1>
 
 <p>
-Más agua, más energía, más vida
+Pureza y confianza en cada gota. Agua potable tratada con altos estándares de calidad para tu hogar y negocio.
 </p>
 
 <a href="#verificacion" class="btn">
 Ver registro sanitario
 </a>
-
 </div>
 
 <div class="hero-image">
-
 <img src="img/bolsa.png" alt="Agua La Cumbre">
-     
-    
 </div>
 
 </div>
-
 </header>
 
 <section>
-
 <div class="container">
 
-<h2 class="title">
-Nuestro Proceso
-</h2>
+<h2 class="title">Nuestro Proceso</h2>
 
 <div class="cards">
-
 <div class="card">
 <h3>Filtración</h3>
 <p>Eliminación de partículas e impurezas presentes en el agua.</p>
@@ -229,47 +228,32 @@ Nuestro Proceso
 <h3>Desinfección UV</h3>
 <p>Control microbiológico mediante luz ultravioleta.</p>
 </div>
-
 </div>
 
 </div>
-
 </section>
 
 <section id="verificacion">
-
 <div class="container">
-
 <div class="verify">
-
 <h2>Producto Verificado</h2>
 
 <p><strong>Marca:</strong> Agua La Cumbre</p>
-
 <p><strong>Registro Sanitario:</strong> RSA-2579-2026</p>
-
 <p><strong>Producto:</strong> Agua Potable Tratada</p>
-
 <p><strong>Estado:</strong> Vigente</p>
-
 <p><strong>Distribución:</strong> Bogotá D.C.</p>
 
 </div>
-
 </div>
-
 </section>
 
 <section>
-
 <div class="container">
 
-<h2 class="title">
-Información de Contacto
-</h2>
+<h2 class="title">Información de Contacto</h2>
 
 <div class="contact">
-
 <div class="contact-box">
 <h3>Dirección</h3>
 <p>Carrera 9 # 189A - 04</p>
@@ -290,19 +274,18 @@ Información de Contacto
 <h3>Redes Sociales</h3>
 <p>@agualacumbre.co</p>
 </div>
-
 </div>
 
 </div>
-
 </section>
 
 <footer>
-
 <p>Agua La Cumbre - Distribuidora de Agua Potable Tratada</p>
-
 </footer>
 
+<a href="https://wa.me/573115538900?text=Hola,%20quisiera%20información%20sobre%20Agua%20La%20Cumbre" target="_blank" class="whatsapp">
+💬 ¿Necesitas ayuda?
+</a>
 
 </body>
 </html>
